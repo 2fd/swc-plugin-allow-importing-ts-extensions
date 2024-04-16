@@ -14,7 +14,6 @@
   ],
   "scripts": {
     "test": "cargo test",
-    "test:build": "rm  -rf tests/fixture/simple/.swc && npm run build -w tests/fixture/simple",
     "format": "prettier --write tests/fixture/*/output.js",
     "prepack": "cargo build --release && cp ./target/wasm32-wasi/release/allow_importing_ts_extensions.wasm .",
     "semantic-release": "semantic-release"
@@ -35,7 +34,6 @@
   },
   "homepage": "https://github.com/2fd/swc-plugin-allow-importing-ts-extensions#readme",
   "devDependencies": {
-    "prettier": "^3.2.5",
     "semantic-release": "^23.0.8"
   }
 }
