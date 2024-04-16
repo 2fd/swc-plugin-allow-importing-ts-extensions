@@ -1,0 +1,5 @@
+**/*
+!LICENSE
+!README.md
+!allow_importing_ts_extensions.wasm
+!package.json
