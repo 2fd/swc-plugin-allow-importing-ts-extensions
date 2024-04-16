@@ -25,9 +25,9 @@ jobs:
             ~/.cargo/
             target
             Cargo.lock
-          key: cargo-dev--${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
+          key: cargo-dev--ubuntu-latest-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
-            cargo-dev--${{ runner.os }}
+            cargo-dev--ubuntu-latest
 
       # Ensure that all components are compilable.
       - run: cargo test --color always --all
