@@ -15,6 +15,10 @@ fn replace_ts_extension(src: &ast::Str, config: &Config) -> Option<ast::Str> {
         if let Some(file) = src.value.strip_suffix(".ts") {
             return Some(format!("{}.js", file).into());
         }
+    } else if src.value.ends_with(".tsx") && !src.value.ends_with(".d.tsx") {
+        if let Some(file) = src.value.strip_suffix(".tsx") {
+            return Some(format!("{}.js", file).into());
+        }
     } else if src.value.ends_with(".mts") && !src.value.ends_with(".d.mts") {
         if let Some(file) = src.value.strip_suffix(".mts") {
             if config.preserve_import_extension {

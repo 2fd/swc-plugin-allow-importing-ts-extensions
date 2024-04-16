@@ -8,6 +8,7 @@
     "provenance": true
   },
   "workspaces": [
+    "./tests/fixture/jsx",
     "./tests/fixture/simple",
     "./tests/fixture/no-preserve-extensions",
     "./tests/fixture/preserve-extensions"
