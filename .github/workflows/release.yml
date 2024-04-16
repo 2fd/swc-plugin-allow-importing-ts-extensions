@@ -41,6 +41,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npm run prepack
+
       - run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
