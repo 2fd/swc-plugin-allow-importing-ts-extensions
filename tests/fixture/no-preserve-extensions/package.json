@@ -1,0 +1,25 @@
+{
+  "name": "@tests/no-preserve-extensions",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "input.js",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf .swc && swc input.ts -o input.js",
+    "format": "prettier --write output.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.4.14",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "swc-plugin-allow-importing-ts-extensions": "file:../../.."
+  }
+}
