@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "test": "cargo test",
-    "prepack": "cargo build --release && cp ./target/wasm32-wasi/release/allow_importing_ts_extensions.wasm .",
+    "prepack": "cargo build --release --target wasm32-wasi && cp ./target/wasm32-wasi/release/allow_importing_ts_extensions.wasm .",
     "semantic-release": "semantic-release"
   },
   "repository": {
