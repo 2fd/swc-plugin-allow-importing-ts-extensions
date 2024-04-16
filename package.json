@@ -1,15 +1,21 @@
 {
   "name": "swc-plugin-allow-importing-ts-extensions",
   "version": "0.0.0-development",
-  "description": "SWC Plugin for allowImportingTsExtensions tsconfg",
+  "description": "SWC Plugin for allowImportingTsExtensions",
   "main": "allow_importing_ts_extensions.wasm",
   "private": false,
+  "publishConfig": {
+    "provenance": true
+  },
   "workspaces": [
-    "./tests/fixture/simple"
+    "./tests/fixture/simple",
+    "./tests/fixture/no-preserve-extensions",
+    "./tests/fixture/preserve-extensions"
   ],
   "scripts": {
     "test": "cargo test",
     "test:build": "rm  -rf tests/fixture/simple/.swc && npm run build -w tests/fixture/simple",
+    "format": "prettier --write tests/fixture/*/output.js",
     "prepack": "cargo build --release && cp ./target/wasm32-wasi/release/allow_importing_ts_extensions.wasm .",
     "semantic-release": "semantic-release"
   },
@@ -29,6 +35,7 @@
   },
   "homepage": "https://github.com/2fd/swc-plugin-allow-importing-ts-extensions#readme",
   "devDependencies": {
+    "prettier": "^3.2.5",
     "semantic-release": "^23.0.8"
   }
 }

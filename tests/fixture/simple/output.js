@@ -5,4 +5,10 @@ export * from "./lib/default.js";
 export * as ExportAll from "./lib/default.js";
 export { default as ExportDefaultAs, ExportValue } from "./lib/default.js";
 const DynamicImport = await import("./lib/dynamic.js");
-export { ImportDefault, ImportAll, ImportDefaultAs, ImportValue, DynamicImport }
+export {
+  ImportDefault,
+  ImportAll,
+  ImportDefaultAs,
+  ImportValue,
+  DynamicImport,
+};

@@ -1,2 +1,2 @@
 # swc-plugin-allow-importing-ts-extensions
-SWC Plugin for allowImportingTsExtensions tsconfg
+SWC Plugin for allowImportingTsExtensions

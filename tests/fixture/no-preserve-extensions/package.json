@@ -1,5 +1,5 @@
 {
-  "name": "@tests/simple",
+  "name": "@tests/no-preserve-extensions",
   "version": "0.0.0-development",
   "description": "",
   "main": "input.js",
