@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "SWC Plugin for allowImportingTsExtensions tsconfg",
   "main": "allow_importing_ts_extensions.wasm",
+  "private": false,
   "workspaces": [
     "./tests/fixture/simple"
   ],
