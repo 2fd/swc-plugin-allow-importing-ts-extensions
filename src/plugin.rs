@@ -11,7 +11,9 @@ pub struct Config {
 }
 
 fn replace_ts_extension(src: &ast::Str, config: &Config) -> Option<ast::Str> {
-    if src.value.ends_with(".ts") && !src.value.ends_with(".d.ts") {
+    if !src.value.starts_with('.') {
+        return None;
+    } else if src.value.ends_with(".ts") && !src.value.ends_with(".d.ts") {
         if let Some(file) = src.value.strip_suffix(".ts") {
             return Some(format!("{}.js", file).into());
         }
