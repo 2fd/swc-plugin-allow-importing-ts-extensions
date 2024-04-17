@@ -1,5 +1,5 @@
 {
-  "name": "@tests/jsx",
+  "name": "@tests/base-url",
   "version": "0.0.0-development",
   "description": "",
   "main": "input.js",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf .swc && swc input.tsx -o input.js",
+    "build": "rm -rf .swc && swc input.ts -o input.js",
     "format": "prettier --write output.js"
   },
   "author": "",
@@ -20,7 +20,6 @@
     "prettier": "^3.2.5"
   },
   "dependencies": {
-    "react": "^18.2.0",
     "swc-plugin-allow-importing-ts-extensions": "file:../../.."
   }
 }

@@ -10,7 +10,9 @@
   },
   "workspaces": [
     "./tests/fixture/jsx",
+    "./tests/fixture/paths",
     "./tests/fixture/simple",
+    "./tests/fixture/base-url",
     "./tests/fixture/no-preserve-extensions",
     "./tests/fixture/preserve-extensions"
   ],
