@@ -8,10 +8,10 @@ If you are using SWC to transpile your TypeScript code, and your target is `es20
 
 ## Compatibility chart
 
-| `@swc/core` | `@rspack/core` | `swc-plugin-allow-importing-ts-extensions` |
-| ----------- | -------------- | ------------------------------------------ |
-| `1.4.0`     | `0.6.x`        | `1.0.x`                                    |
-| `1.5.0`     |                | `1.1.x`                                    |
+| `swc-plugin-allow-importing-ts-extensions` | `@swc/core` | `@rspack/core` |
+| ------------------------------------------ | ----------- | -------------- |
+| `1.0.x`                                    | `1.4.0`     | `0.6.x`        |
+| `1.1.x`                                    | `1.5.0`     |                |
 
 ## Usage
 
