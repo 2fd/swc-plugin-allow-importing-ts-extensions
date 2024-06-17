@@ -37,5 +37,5 @@ swc_ecma_transforms_base = "0.138.1"
 swc_ecma_transforms_testing = "0.141.1"
 swc_ecma_transforms_typescript = "0.189.1"
 swc_ecma_utils = "0.128.1"
-testing = "0.35.22"
+testing = "0.36.0"
 tracing = { version="0.1", features = ["release_max_level_info"] }
