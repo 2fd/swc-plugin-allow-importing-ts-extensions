@@ -13,6 +13,7 @@ If you are using SWC to transpile your TypeScript code, and your target is `es20
 | `1.0.x`                                    | `1.4.0`     | `0.6.x`        |
 | `1.1.x`                                    | `1.5.0`     |                |
 | `1.2.x`                                    | `1.5.0`     |                |
+| `1.3.x`                                    | `1.6.0`     |                |
 
 ## Usage
 
